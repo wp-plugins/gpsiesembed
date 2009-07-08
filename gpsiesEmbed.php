@@ -2,9 +2,9 @@
 /*
 Plugin Name: GPSies Embed
 Version: 0.1
-Plugin URI: http://flavio.alicubi.net/gpsies-embded/
+Plugin URI: http://flavio.alicubi.net/gpsiesembed/
 Description: Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
-Author: flavio
+Author: flavio alberti
 Author URI: http://flavio.alicubi.net/
 
 The tag to insert the code is: <code>[gpsies url width height]</code>
