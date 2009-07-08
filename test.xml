@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpsies>
+  <meta>
+    <requestUrl>http://www.gpsies.com/api.do?fileId=esabmwffzzvjwube</requestUrl>
+    <fileId>esabmwffzzvjwube</fileId>
+    <resultPage>1</resultPage>
+    <limit>10</limit>
+    <resultSize>1</resultSize>
+  </meta>
+  <tracks>
+    <track>
+      <title>cima Portule versante OVEST</title>
+      <fileId>esabmwffzzvjwube</fileId>
+      <downloadLink>http://www.gpsies.com/files/kmz/e/esabmwffzzvjwube.kmz</downloadLink>
+      <createdDate>2009-02-18 00:00:48.0</createdDate>
+      <startPointLat>45.9671073</startPointLat>
+      <startPointLon>11.4144097</startPointLon>
+      <endPointLat>45.9775981</endPointLat>
+      <endPointLon>11.4349495</endPointLon>
+      <startPointCountry>IT</startPointCountry>
+      <endPointCountry>IT</endPointCountry>
+      <trackLengthM>5797.49382632713</trackLengthM>
+      <countTrackpoints>34</countTrackpoints>
+      <externalLink>http://flavio.alicubi.net/tracks/cima-portule/</externalLink>
+      <altitudeMinHeightM>1617</altitudeMinHeightM>
+      <altitudeMaxHeightM>2271</altitudeMaxHeightM>
+      <altitudeDifferenceM>654</altitudeDifferenceM>
+      <totalAscentM>675</totalAscentM>
+      <totalDescentM>511</totalDescentM>
+    </track>
+  </tracks>
+</gpsies>
+
