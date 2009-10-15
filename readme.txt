@@ -28,6 +28,7 @@ and permits to embed the following maps into your blog.
 	show=details
 	show=summary
 	show=full
+	show=maponly
 
 = Example for 1: Geocoordinate with perimeter: =
 [gpsies lat=51&lon=10&perimeter=80&limit=20&trackTypes=jogging&filetype=kml&device=Run.GPS show=details]
