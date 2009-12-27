@@ -7,6 +7,15 @@ Stable tag: 0.1.4
 
 Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
 
+== Changelog ==
+
+= 0.1.3 =
+* Added the the show=maponly display option
+
+= 0.1.4 =
+* Fixed the limited result list bug
+
+
 == Description ==
 
 Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
