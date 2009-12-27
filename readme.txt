@@ -2,7 +2,7 @@
 Contributors: flavio alberti
 Tags: google maps, gis, tracks, route, posts, gpssies, 
 Requires at least: 2.5
-Tested up to: 2.7.1
+Tested up to: 2.9.0
 Stable tag: 0.1.4
  
 Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
@@ -14,6 +14,9 @@ Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
 
 = 0.1.4 =
 * Fixed the limited result list bug
+
+= 0.1.5 =
+* tested and fixed compatibility with wordpress 2.9
 
 
 == Description ==
