@@ -67,8 +67,8 @@ class GPSiesEmbed extends GPSiesEmbed_Plugin
 	function replace ($matches)
 	{
 		$showmode = $matches[2];
-		$xmlresponse = $this->enquiry($matches[1]);
-		$parms =  array ('gpsies' => $xmlresponse, 'showmode'=>$showmode);
+		$xmlresp = $this->enquiry($matches[1]);
+		$parms =  array ('gpsies' => $xmlresp, 'showmode'=>$showmode);
 		return $this->capture ('trackInfo',$parms);
 	}
 
@@ -84,10 +84,18 @@ class GPSiesEmbed extends GPSiesEmbed_Plugin
 		$url=GPS_EMBED_API_URL;
 		$url = $url.$parms;
 		//$url = dirname (__FILE__)."/test.xml";
+		$url = $this->charcode($url);
 		$xmlresponse = simplexml_load_file($url)or exit(__("Unable to open URL!"));
+		
 		return $xmlresponse;
 	}
 	
+	function charcode ($text) { 
+	    $search = array("&#038;"); 
+	    $replace = array("&"); 
+	    $text = str_replace($search, $replace, $text); 
+	    return $text; 
+	} 
 		
 }
 

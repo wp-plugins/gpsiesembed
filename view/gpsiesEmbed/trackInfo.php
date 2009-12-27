@@ -4,7 +4,8 @@ define('GPS_SHOW_MAPONLY',		'maponly');
 define('GPS_SHOW_FULL',			'full');
 define('GPS_SHOW_SUMMARY',		'summary');
 define('GPS_SHOW_DETAILS',		'details');
-foreach ($gpsies->tracks->xpath("track") as $track) {
+$tracksrev = array_reverse($gpsies->tracks->xpath("track")); 
+foreach ($tracksrev as $track) {
 	if($showmode!=GPS_SHOW_MAPONLY){
 		?><pre><?php	
 		echo '<strong>'.__('Title','gpsiesembed').':</strong> '.$track->title.'<br />';
