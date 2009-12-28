@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: GPSies Embed
-Version: 0.1.5
+Version: 0.1.6
 Plugin URI: http://flavio.alicubi.net/gpsiesembed/
 Description: Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
 Author: flavio alberti
@@ -94,8 +94,8 @@ class GPSiesEmbed extends GPSiesEmbed_Plugin
 	//replace the the &amp; char code to & otherwise the gpsies api invocation does not work correctly. 
 	// tested on wp 2.9
 	function charcode ($text) { 
-	    search = array("&#038;","&amp;");
-            $replace = array("&","&");
+	    $search = array("&#038;","&amp;");
+        $replace = array("&","&");
 	    $text = str_replace($search, $replace, $text); 
 	    return $text; 
 	} 
