@@ -32,7 +32,7 @@ License:
 
 
 
-define('GPS_EMBED_API_URL',		'http://www.gpsies.com/api.do?');
+define('GPS_EMBED_API_URL',		'http://www.gpsies.com/api.do?key=nzhiikracfuobrvw&');
 define('GPS_EMBED_SHORTCODE',	'gpsies');
 define('GPS_EMBED_FILEID',		'fileId');
 define('GPS_EMBED_USERNAME',	'username');
