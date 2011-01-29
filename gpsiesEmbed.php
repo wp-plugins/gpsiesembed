@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: GPSies Embed
-Version: 0.1.8
+Version: 0.1.6
 Plugin URI: http://flavio.alicubi.net/gpsiesembed/
 Description: Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
 Author: flavio alberti
@@ -32,7 +32,7 @@ License:
 
 
 
-define('GPS_EMBED_API_URL',		'http://www.gpsies.com/api.do?key=nzhiikracfuobrvw&');
+define('GPS_EMBED_API_URL',		'http://www.gpsies.com/api.do?');
 define('GPS_EMBED_SHORTCODE',	'gpsies');
 define('GPS_EMBED_FILEID',		'fileId');
 define('GPS_EMBED_USERNAME',	'username');
