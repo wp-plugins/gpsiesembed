@@ -4,7 +4,8 @@ define('GPS_SHOW_MAPONLY',		'maponly');
 define('GPS_SHOW_FULL',			'full');
 define('GPS_SHOW_SUMMARY',		'summary');
 define('GPS_SHOW_DETAILS',		'details');
-$tracksrev = array_reverse($gpsies->tracks->xpath("track")); 
+$xmlgpsies = new SimpleXMLElement($gpsies); 
+$tracksrev = array_reverse($xmlgpsies->tracks->xpath("track")); 
 foreach ($tracksrev as $track) {
 	if($showmode!=GPS_SHOW_MAPONLY){
 		?><pre><?php	

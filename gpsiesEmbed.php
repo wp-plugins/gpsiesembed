@@ -32,7 +32,7 @@ License:
 
 
 
-define('GPS_EMBED_API_URL',		'http://www.gpsies.com/api.do?');
+define('GPS_EMBED_API_URL',		'http://www.gpsies.com/api.do?key=nzhiikracfuobrvw&');
 define('GPS_EMBED_SHORTCODE',	'gpsies');
 define('GPS_EMBED_FILEID',		'fileId');
 define('GPS_EMBED_USERNAME',	'username');
@@ -67,7 +67,8 @@ class GPSiesEmbed extends GPSiesEmbed_Plugin
 	function replace ($matches)
 	{
 		$showmode = $matches[2];
-		$xmlresp = $this->enquiry($matches[1]);
+		//$xmlresp = $this->enquiry($matches[1]);
+		$xmlresp = $this->curl_get(GPS_EMBED_API_URL,$matches[1]);
 		$parms =  array ('gpsies' => $xmlresp, 'showmode'=>$showmode);
 		return $this->capture ('trackInfo',$parms);
 	}
@@ -89,6 +90,27 @@ class GPSiesEmbed extends GPSiesEmbed_Plugin
 		
 		return $xmlresponse;
 	}
+
+	function curl_get($url, $getParams) 
+	{    
+    		$defaults = array( 
+        		CURLOPT_URL => $url. (strpos($url, '?') === FALSE ? '?' : '').$getParams, 
+        		CURLOPT_HEADER => 0, 
+        		CURLOPT_RETURNTRANSFER => TRUE, 
+      			CURLOPT_TIMEOUT => 4 
+    		); 
+    
+    		$ch = curl_init(); 
+    		curl_setopt_array($ch, ($defaults)); 
+    		if( ! $result = curl_exec($ch)) 
+    		{ 
+    		    trigger_error(curl_error($ch)); 
+    		} 
+    		curl_close($ch); 
+    		return $result; 
+	} 
+
+	
 	
 
 	//replace the the &amp; char code to & otherwise the gpsies api invocation does not work correctly. 
