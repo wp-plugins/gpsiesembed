@@ -18,7 +18,7 @@ Add GPSies Maps to your posts and pages.(Only for WordPress 2.5+)
 = 0.1.6 =
 * tested and fixed compatibility with wordpress 2.9
 
-= 0.1.8 =
+= 0.2 =
 * updated to the new of gypsies api otherwise the plugin can not work. 
 
 
